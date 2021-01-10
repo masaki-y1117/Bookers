@@ -1,3 +1,9 @@
+<% if flash[:notice] %>
+ <div class="flash">
+ 	<%= flash[:notice] %>
+ </div>
+<% end %>
+
 <section class="book-box">
 	<p class="book-box-heading">
 		<strong>Title:</strong> <%= @book.title %>
