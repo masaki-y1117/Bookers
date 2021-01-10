@@ -1,11 +1,12 @@
 <section class="book-box">
-	<h5 class="book-box-heading">
-		<span>Title:</span> <%= @book.title %>
-	</h5>
-	<h5 class="book-box-content">
-		<span>Body:</span> <%= @book.body %>
-	</h5>
+	<p class="book-box-heading">
+		<strong>Title:</strong> <%= @book.title %>
+	</p>
+	<p class="book-box-content">
+		<strong>Body:</strong> <%= @book.body %>
+	</p>
 </section>
 
 <%= link_to "Edit", edit_book_path(@book) %>
+<span>|</span>
 <%= link_to "Back", books_path %>

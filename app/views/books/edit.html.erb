@@ -3,7 +3,7 @@
   <div id="error_explanation" class="alert alert-danger">
     <ul>
       <% @book.errors.full_messages.each do |message| %>
-        <li>error <%= message %></li>
+        <li><%= message %></li>
       <% end %>
     </ul>
   </div>
@@ -19,4 +19,5 @@
 <% end %>
 
 <%= link_to "Show ", book_path(@book) %>
+<span>|</span>
 <%= link_to "Back", books_path %>
